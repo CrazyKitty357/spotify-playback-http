@@ -21,9 +21,4 @@ my normal command for doing this is `python -m venv venv/`
 6. run `api.py` this will make the http server and will connect to the server.py
 
 ## HTTP API calls
-GET - `http://localhost:5000/playpause` - toggles playing and pausing  
-GET - `http://localhost:5000/next` - skips to the next track  
-GET - `http://localhost:5000/back` - it's like pressing the previous song arrow  
-GET - `http://localhost:5000/shuffle` - toggles shuffle  
-GET - `http://localhost:5000/repeat` - toggles looping between the 3 different states  
-GET - `http://localhost:5000/data` - prints the current track title in the server.py  
+`http://localhost:5000` - shows all of the http API calls in a nice, formatted list in your browser.
