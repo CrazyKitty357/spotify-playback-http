@@ -167,7 +167,7 @@ def callback():
     global SPOTIFY_ACCESS_TOKEN
     SPOTIFY_ACCESS_TOKEN = token_info["access_token"]
 
-    return jsonify({"status": "success", "token": SPOTIFY_ACCESS_TOKEN})
+    return jsonify({"status": "success", "token": SPOTIFY_ACCESS_TOKEN, "url": f"http://localhost:5000/settoken?token={SPOTIFY_ACCESS_TOKEN}"})
 
 @app.route('/settoken')
 def set_token():
