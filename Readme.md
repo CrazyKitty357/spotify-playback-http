@@ -1,4 +1,4 @@
-# Unoffical Spotify Playback HTTP server
+# Unoffical Spotify Playback HTTP Server
 
 ### Control your spicetify client via HTTP requests
 project based on [Terminal Spotify](https://github.com/Om-Thorat/Term-Spotify)
@@ -10,7 +10,9 @@ project based on [Terminal Spotify](https://github.com/Om-Thorat/Term-Spotify)
 
 ### Notes
 if you are on an arch based version of linux I recommend making a virtual environment and activating it before opening the 2 python files.  
-my normal command for doing this is `python -m venv venv/`
+my normal command for doing this is `python -m venv venv/`  
+
+there is also a branch where it's less compatible with the currently released version *(as of 4/10/2025)* of the unoffical playbackapi but it adds more features like the ability to request songs or the ability to be able to get nowplaying data and a spotify auth token via the http api.
 
 ## How to use
 1. Download the [playbackapi.js](https://github.com/Om-Thorat/Spicetify-extension/blob/main/dist/playbackapi.js) and replace all instances of `443` with `8443` (for sudo's sake)
@@ -26,4 +28,4 @@ GET - `http://localhost:5000/next` - skips to the next track
 GET - `http://localhost:5000/back` - it's like pressing the previous song arrow  
 GET - `http://localhost:5000/shuffle` - toggles shuffle  
 GET - `http://localhost:5000/repeat` - toggles looping between the 3 different states  
-GET - `http://localhost:5000/data` - prints the current track title in the server.py  
+GET - `http://localhost:5000/data` - prints the current track title in the server.py
