@@ -1,4 +1,4 @@
-# Unoffical Spotify Playback HTTP server
+# Unoffical Spotify Playback HTTP server (Less Compatible with Normal Unoffical Spotify Playback api version)
 
 ### Control your spicetify client via HTTP requests
 project based on [Terminal Spotify](https://github.com/Om-Thorat/Term-Spotify)
